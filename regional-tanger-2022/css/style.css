@@ -1,0 +1,103 @@
+body{
+    width: 90%;
+    margin: 0 5%;
+}
+header{
+    background-color: rgb(49, 124, 236);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+header h1{
+    padding: 10px;
+}
+header svg{
+    width: 20px;
+    padding: 10px;
+}
+
+nav{
+    height: 10px;
+    margin: 5px 0;
+    background-image: linear-gradient(to left,grey,rgb(49, 124, 236),grey);
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ani{
+    0%{
+        background-image: linear-gradient(to left,rgb(188, 187, 187),rgb(49, 124, 236));
+    }
+    25%{
+        background-image: linear-gradient(to left,rgb(188, 187, 187),rgb(49, 124, 236),rgb(188, 187, 187) 5%);
+    }
+    50%{
+        background-image: linear-gradient(to left,rgb(188, 187, 187),rgb(49, 124, 236),rgb(188, 187, 187));
+    }
+    75%{
+        background-image: linear-gradient(to left,rgb(188, 187, 187) 5%,rgb(49, 124, 236),rgb(188, 187, 187));
+    }
+    100%{
+        background-image: linear-gradient(to left,rgb(49, 124, 236),rgb(188, 187, 187) 50%);
+    }
+}
+section{
+    display: flex;
+}
+.gouche{
+    background-color: rgb(188, 187, 187);
+    color: rgb(49, 124, 236);
+    width: 300px;
+    height: 300px;
+}
+.gouche a{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 20px;
+    margin: 10px auto;
+    box-shadow: 3px 3px 2px 2px rgb(49, 124, 236);
+    color: rgb(49, 124, 236);
+}
+.centrale{
+    background-color: rgb(188, 187, 187);
+    color: rgb(49, 124, 236);
+    width: 600px;
+    margin: 0 5px;
+    height: 300px;
+}
+.centrale h2,h3,h4,a{
+    margin: 10px 10px;
+}
+.centrale a{
+    text-decoration: none;
+    
+    color: rgb(49, 124, 236);
+}
+.droite{
+    background-color: rgb(188, 187, 187);
+    color: rgb(49, 124, 236);
+    width: 400px;
+    height: 300px;
+}
+.droite h2,ul{
+    margin: 10px 10px;
+}
+.droite ul{
+    list-style-image: url("../icons/user-regular.svg");
+}
+.droite ul a{
+    text-decoration: none;
+    color: rgb(49, 124, 236);
+}
+footer{
+    background-color: rgb(49, 124, 236);
+    margin-top: 5px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    height: 30px;
+    color: white;
+}
