@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            color: white;
+            background-color: rgb(46, 145, 245);
+            border-radius: 5px;
+        }
+        section{
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            box-shadow: 1px 0px 2px 2px rgb(46, 145, 245);
+            height: 410px;
+        }
+        span{
+            display: inline-block;
+            color: aliceblue;
+            width: 20px;
+            border-radius: 50%;
+            background-color: rgb(46, 145, 245);
+            color: aliceblue;
+            text-align: center;
+        }
+        h3,label{
+            color: rgb(46, 145, 245);
+        }
+        [type="text"],[type="password"],[type="email"]{
+            width: 100%;
+        }
+        button{
+            color: aliceblue;
+            background-color: rgb(46, 145, 245);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Inscrevez vous maintenant !</h1>
+            <h2>Enregistrez vous et dis nous votre avis !</h2>
+        </header>
+        <h3><span>1</span> Coordonées</h3>
+        <form>
+            <label for="cev">Cévilité :</label>
+            <label for="mr">Mr</label>
+            <input type="radio" id="mr" name="gen" value="mr">
+            <label for="mme">Mme</label>
+            <input type="radio" id="mme" name="gen" value="mme"><br><br>
+            <input type="text" placeholder="Nom complet"><br><br>
+            <input type="email" placeholder="Email"><br>
+        </form>
+        <h3><span>2</span> Mot de passe</h3>
+        <form>
+            <input type="password" placeholder="Mot de passe"><br><br>
+            <input type="password" placeholder="Confirmer mot de passe"><br><br>
+            <button type="submit">Valider</button><br>
+        </form>
+    </section>
+</body>
+</html>
