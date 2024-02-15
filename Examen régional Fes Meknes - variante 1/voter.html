@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input{
+            position: relative;
+            left: 50px;
+        }
+        div{
+            position: relative;
+            left: 80px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sondage sur la satisfaction de site Alibaba</h1><br>
+    <form>
+        <label for="cin">CIN :</label>
+        <input name="cin" type="text" class="input"><br><br>
+        <label for="vil">Ville :</label>
+        <select name="vil" id="vil" class="input">
+            <option>Maroc</option>
+            <option value="fas">Fas</option>
+            <option value="casa">Casa</option>
+        </select><br><br><br>
+        <label for="tl">T.L :</label>
+        <input type="tel" name="tl" class="input"><br>
+        <label for="poi"> <h3>A quel point etre-vous satisfait de ce site ?</h3></label><br>
+        <input type="text"><br>
+        <label for="recon"><h3>Avez-vous recontré des problémes avec ce site ?</h3></label>
+        <div>
+            <input type="radio" name="choi" id="oui" value="oui">
+            <label for="oui">oui</label>
+            <input type="radio" name="choi" id="non" value="non">
+            <label for="non">non</label><br><br>
+        </div>
+        <button>annuler</button>
+        <button>envoyer</button>
+    </form>
+</body>
+</html>
