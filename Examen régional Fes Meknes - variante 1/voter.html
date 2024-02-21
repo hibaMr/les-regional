@@ -17,7 +17,9 @@
     </style>
 </head>
 <body>
-    <h1>Sondage sur la satisfaction de site Alibaba</h1><br>
+    <fieldset>
+        <legend><h1>Sondage</h1></legend>
+    <h2>Sondage sur la satisfaction de site Alibaba</h2><br>
     <form>
         <label for="cin">CIN :</label>
         <input name="cin" type="text" class="input"><br><br>
@@ -30,7 +32,7 @@
         <label for="tl">T.L :</label>
         <input type="tel" name="tl" class="input"><br>
         <label for="poi"> <h3>A quel point etre-vous satisfait de ce site ?</h3></label><br>
-        <input type="text"><br>
+        <input type="range" min="0%" max="100%"><br>
         <label for="recon"><h3>Avez-vous recontré des problémes avec ce site ?</h3></label>
         <div>
             <input type="radio" name="choi" id="oui" value="oui">
@@ -41,5 +43,6 @@
         <button>annuler</button>
         <button>envoyer</button>
     </form>
+</fieldset>
 </body>
 </html>
